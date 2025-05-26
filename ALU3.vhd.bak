@@ -1,0 +1,30 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+entity ALU3 is  -- ALU unit includes Reg. 3
+    port (
+        clk, res      : in std_logic;
+        Reg1, Reg2    : in std_logic_vector(7 downto 0); -- Inputs A & B (unused here)
+        student_id    : in std_logic_vector(3 downto 0); -- From FSM
+        opcode        : in std_logic_vector(7 downto 0); -- From Decoder
+        Result        : out std_logic_vector(6 downto 0) -- 7-segment pattern (a–g)
+    );
+end ALU3;
+
+architecture calculation of ALU3 is
+begin
+    process (clk, res)
+    begin
+        if res = '1' then
+            Result <= "0000000"; -- All segments OFF
+        elsif rising_edge(clk) then
+            if student_id(0) = '0' then  -- even
+                Result <= "0111011";  -- show 'y'
+            else  -- odd
+                Result <= "0001011";  -- show 'n'
+            end if;
+        end if;
+    end process;
+end calculation;
