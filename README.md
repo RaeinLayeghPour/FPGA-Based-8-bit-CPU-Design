@@ -46,5 +46,5 @@ A minimalistic CPU architecture implemented on FPGA hardware, featuring a basic 
 
 Feel free to reach out with questions, suggestions, or project collaboration:
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/raeinlp)
-- ✉️ Email: raeen.layegh2017@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/raeinlp)
+- Email: raeen.layegh2017@gmail.com
