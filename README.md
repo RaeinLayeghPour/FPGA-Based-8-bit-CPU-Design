@@ -1,4 +1,4 @@
-# FPGA-Based Simple CPU Design
+# FPGA-Based 8-bit CPU Design
 
 A minimalistic CPU architecture implemented on FPGA hardware, featuring a basic instruction set, ALU, register file, and control unit. Perfect for learning digital design, CPU microarchitecture, and FPGA workflows.
 
